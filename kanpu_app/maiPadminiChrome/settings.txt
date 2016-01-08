@@ -1,0 +1,120 @@
+//maiPad miniの設定を自由に変更することができます。
+//『&マクロ名=値』の『値』を変更してください。
+//『=』と『値』の間に余計なスペースなどは入れないでください。
+
+
+// サウンドエフェクトのタイプ 0～2
+//  (0) [ OFF        ] 何も鳴らしません。
+//  (1) [ ON         ] 判定に合わせて音を鳴らします。
+//  (2) [ BREAK ONLY ] Breakで2600点が取れたときのみ、音を鳴らします。
+&soundeffect=0
+
+// アンサーサウンドのタイプ 0～4
+//  (0) [ OFF      ] 何も鳴らしません。
+//  (1) [ Basis    ] TAP、HOLDの始点と終点、SLIDEの☆TAP、BREAKが判定ラインに来るタイミングで音を鳴らします。
+//  (2) [ Basis+   ] Basisに加え、SLIDEの☆が動き出す瞬間に「シャリーン」という音を鳴らすようになります。
+//  (3) [ Special  ] HOLDの終点で低めの音を鳴らすようになり、BREAKで「チャリン」という音を鳴らすようになります。それ以外はBasisと同じです。
+//  (4) [ Special+ ] Specialに加え、SLIDEの☆が動き出す瞬間に「シャリーン」という音を鳴らすようになります。
+&answersound=4
+
+// アンサーサウンドの時間調整 0～正の数でいくらでも
+//  1は1秒で、数値を増やすとアンサーサウンドが判定時間より早く鳴ります。
+&answersoundoffset=0
+
+// 背景の明るさ調整 0～255
+//  数値を増やすと背景が明るくなります。
+&brightness=128
+
+// ガイドスピード 0～正の数でいくらでも
+//  譜面が流れるスピードを調整できます。数値を増やすと遅くなります。1で、出現後1秒かけて判定ラインまで移動します。
+&guidespeed=0.8
+
+// マーカーサイズ 0～正の数でいくらでも
+//  マーカーの大きさを倍率で変更します。
+&markersize=0.6
+
+// スライドマーカーのサイズ True/False
+//  &markersizeをスライドマーカーの大きさにも適用するかを変更します。Trueで適用します。
+&slidemarkersizeadaption=False
+
+// スターローテーション True/False
+//  ☆の回転をスライドの速さに連動して回転するかどうかを変更します。Trueで回転します。
+&starrotation=False
+
+// 譜面ミラー True/False
+//  譜面を左右反転させます。Trueで反転します。
+&mirrorcustom=False
+
+// 譜面ターン 0～7
+//  譜面を時計回りに回転させます。
+&turncustom=0
+
+// 背景表示情報のタイプ 0～10
+//  (0)  [ NONE                           ] 何も表示しません。
+//  (1)  [ COMBO                          ] コンボ数を表示します。
+//  (2)  [ ACHIEVEMENT                    ] 達成率を表示します。
+//  (3)  [ SCORE                          ] スコアを表示します。
+//  (4)  [ PCOMBO                         ] パーフェクト以外を取ると切れるコンボ数を表示します。
+//  (5)  [ BPCOMBO                        ] 最高得点未満を取ると切れるコンボ数を表示します。
+//  (6)  [ PACE ACHIEVEMENT               ] その時点での達成率を表示します。
+//  (7)  [ HAZARD ACHIEVEMENT             ] 減算式の達成率を表示します。
+//  (8)  [ THEORETICAL ACHIEVEMENT        ] 理論値を100％とした達成率を表示します。
+//  (9)  [ THEORETICAL PACE ACHIEVEMENT   ] 理論値を100％としたその時点での達成率を表示します。
+//  (10) [ THEORETICAL HAZARD ACHIEVEMENT ] 理論値を100％とした減算式の達成率を表示します。
+&bginfo=3
+
+// 画面上部の達成率表示のタイプ 0～6
+//  (0) [ NONE                             ] 何も表示しません。
+//  (1) [ STANDARD                         ] 達成率を表示します。
+//  (2) [ PACE ACHIEVEMENT                 ] その時点での達成率を表示します。
+//  (3) [ HAZARD ACHIEVEMENT               ] 減算式の達成率を表示します。
+//  (4) [ THEORETICAL STANDARD ACHIEVEMENT ] 理論値を100％とした達成率を表示します。
+//  (5) [ THEORETICAL PACE ACHIEVEMENT     ] 理論値を100％としたその時点での達成率を表示します。
+//  (6) [ THEORETICAL HAZARD ACHIEVEMENT   ] 理論値を100％とした減算式の達成率を表示します。
+&usachvinfo=1
+
+// ホールド角ばらせ True/False
+//  Trueにするとホールドノートの先端を角ばらせます。
+&angulatedhold=True
+
+// カンマカウントと行数の表示切り替え True/False
+//  判定したノートが、譜面上の『,』が何個ある場所にあるかと、それが何行目にあるかを画面上部に表示するかを切り替えます。Trueで表示します。
+&cammacount=False
+
+// 判定情報画面上部表示 True/False
+//  判定を画面上部にエフェクトとして表示できます。Trueで表示します。
+&upscreendrawjudgeeffect=True
+
+// スタートカウント再生 True/False
+//  譜面再生前に、4拍『カッカッカッカッ』という音を鳴らすことができます。Trueで鳴らします。
+&startcount=True
+
+// オートプレー True/False
+//  自動的にすべてパーフェクト判定にします。Trueで適用します。
+&autoplay=True
+
+// 判定表示 True/False
+//  判定を表示するかを切り替えます。Trueで表示します。
+&evaluatevisible=True
+
+// ホールド完全表示 True/False
+//  ホールドをミスしても離すところまで表示するかを切り替えます。Trueで最後まで表示します。
+&holdfullview=False
+
+// スライドマーカー自動消去 True/False
+//  ☆の動きに合わせてスライドーマーカーを消していきます。Trueで適用します。
+&slidemarkerautodelete=True
+
+// センサー描画 True/False
+//  センサーを描画するか切り替えます。Trueで描画します。
+&drawablesensors=False
+
+// 旧式センサー True/False
+//  すべてのセンサーを円型にするか切り替えます。Trueで円型になります。
+&oldtypesensor=False
+
+// タップノートブレーク化 True/False
+//  すべての円TAPをBREAKにします。☆はそのままです。Trueで適用します。
+&changetaptobreak=False
+
+
